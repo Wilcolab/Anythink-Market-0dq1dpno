@@ -1,0 +1,26 @@
+Write a JavaScript function that converts any string input into snake_case format.
+
+The function should:
+- Convert camelCase strings (e.g., "helloWorld") to snake_case (e.g., "hello_world")
+- Convert PascalCase strings (e.g., "HelloWorld") to snake_case (e.g., "hello_world")
+- Convert space-separated strings (e.g., "hello world") to snake_case (e.g., "hello_world")
+- Convert hyphen-separated strings (e.g., "hello-world") to snake_case (e.g., "hello_world")
+- Ensure all characters are lowercase
+- Handle multiple consecutive separators (e.g., "hello--world" or "hello  world" should become "hello_world")
+
+The function signature should be:
+function toSnakeCase(text)
+
+Expected behavior:
+- toSnakeCase("helloWorld") returns "hello_world"
+- toSnakeCase("HelloWorld") returns "hello_world"
+- toSnakeCase("hello world") returns "hello_world"
+- toSnakeCase("hello-world") returns "hello_world"
+- toSnakeCase("hello_world") returns "hello_world"
+- toSnakeCase("hello--world") returns "hello_world"
+
+Provide JSDoc documentation for the function including:
+- A clear description of what the function does
+- @param tag describing the input parameter
+- @returns tag describing the output
+- At least 3 @example tags showing different input formats
